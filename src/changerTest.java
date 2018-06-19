@@ -33,4 +33,8 @@ public class changerTest {
     public void givesChangeFor88(){
         assertEquals(coins(50, 20, 10, 5, 2, 1), changer.changed(88));
     }
+    @Test
+    public void givesChangeFor108(){
+        assertEquals(coins(50, 50, 5, 2, 1), changer.changed(108));
+    }
 }
